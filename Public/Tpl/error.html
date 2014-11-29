@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD HTML 4.01 Strict//EN' 'http://www.w3.org/TR/html4/strict.dtd'>
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset='>
+<title>error</title>
+<script>
+window.onload=function(){
+	setTimeout(function(){window.location.href='<?php echo __APP__;?>'},5000)
+	
+}
+</script>
+</head>
+<body>
+<div>
+<?php echo $e['message']; ?>
+<div>
+页面将在5秒后跳转 或者点击<a href="<?php echo __APP__; ?>">返回首页</a>
+</div>
+</div>
+
+</body>
+</html>
